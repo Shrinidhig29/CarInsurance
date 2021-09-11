@@ -1,0 +1,50 @@
+ID: (int) We can even drop this columns or retain it
+
+KIDSDRIV: (int) 0 1 2 3 4 - number of kids person having
+
+AGE: (float) 36(min) to 68(max) - person age - need to remove .
+
+HOMEKIDS: (int) 2 0 1 4 3 5 - number of kids in home
+
+YOJ: (float) year of joining - nan is found(cleaning required) 0(min) 19(max)
+
+INCOME: (obj) annual income of customer $ and , -symbol must treated(cleaning required)
+
+PARENT1: (obj) parents alive or not NO | YES
+
+HOME VAL: (obj) home value of customer $ and , -symbol must treated(cleaning required)
+
+MSTATUS: (obj) marital status YES | z_No
+
+GENDER: (obj) M | z_F
+
+EDUCATION: (obj)=5= Bachelors | Masters | z_High_School | <High School | PHD
+
+OCCUPATION: (obj)=9= z_Blue_Collar | Lawyer | nan | Professional | Clerical | Doctor | Student | Home Maker | Manager
+
+TRAVTIME: (int) assume min or hour 7(min) 98(max)
+
+CAR USE: (obj)=2= Commerical | Private
+
+BLUEBOOK: (obj) $ and , -symbol must treated(cleaning required)
+
+CAR TYPE: (obj)=6= Van | Minivan | Pickup | z_SUV | Panel Truck | Sports Car
+
+RED CAR: red coloir car Yes | No
+
+OLD CLAIM: (obj)  $ and , -symbol must treated(cleaning required)
+
+REVOKED: (obj) Yes | No
+
+MVR PTS: (int) claim points  2  5  0  4  6  3  1  7  8  9 10
+
+CLM AMOUNT: (obj) $ and , -symbol must treated(cleaning required)
+
+CAR AGE: (int) claim amount [11. 14. 12. 18.  9. nan  8. -1. 16. 15.  0.  5.  2.  1.  6. 13. 10. 21.
+  7.  4. 19. 17.  3. 23. 22. 20. 25. -5. 24.] need to remove .
+
+CLAIM FLAG: (int) 1 | 0  0 - Claim was not made, 1 - Claim made
+
+
+get_dummies
+
