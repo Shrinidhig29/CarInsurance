@@ -1,0 +1,60 @@
+EXPLORATORY DATA ANALYSIS: EDA : discover the patterns, outliers. generating summary statistics for numerical data.
+				 graphical representation to understand the data better.
+
+- Dropping out the unwanted columns
+- CHECK FOR NULL VALUES: always check null(0) and (missing)nan values
+- UNIVARENT AND BIVARIANT ANALYSIS:
+	There will be catogorical and numerical values
+	we can use different types of plots from pandas, seaborn, matplotlib
+		* boxplot
+		* scatter plot
+		* bar plot
+		* pie
+		* hist
+		* density
+- read data: pd.read_csv() : csv files
+			   : excel files
+
+- starting 5 or rows : df.head()
+	read all columns/attributes
+	read all rows
+
+- statistics parameter: df.describe(include='all') - all num and cat values
+			df.descibe() - only numerical  
+			df.describe(include='object')
+
+	For NUM: 
+		 mean:
+		 standard deviation:
+		 percentiles:
+		 maximum:
+
+	For CAT: 
+		count: 
+		top(most frequent value):
+		unique:
+		corresponding fre:
+
+- Missing value imputation:
+		1. check for missing values
+			df.isnull().sum()
+		2. if there is any missing values then impute:
+			 mode - categorical features
+			 mean and meadian - numerical features
+
+- Graphical representation
+	(I will try to use def function from next)
+		Univariate Analysis: 
+			use(cat) = Bar graph(distribute) : df[''].value_counts().plot(kind='bar', title:'', figsize=(20,20))
+			use(num) = Box plot(visualize-identify outlier) : df.boxplot()
+			use(num) = distplot(how the data distributed): sns.distplot(df[''])
+
+		Bivariate Analysis:
+			Relational anlysis: sns.relplot(x='', y='', hue='', data=df)
+
+		Multivariate Analysis: 
+			Heatmap()
+			corr() - chech for correlation between two or more than two feature   
+			
+
+						

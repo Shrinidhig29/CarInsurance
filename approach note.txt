@@ -48,3 +48,25 @@ CLAIM FLAG: (int) 1 | 0  0 - Claim was not made, 1 - Claim made
 
 get_dummies
 
+- Created conda envir for your current project(always create envir to keep the limited requirements)
+	* conda create -n [name of project]
+	* activate [name of project]
+	* cd [name of project]
+	
+- To know the list of conda envir - conda env list
+
+- Load libraries: numpy as np
+		  pandas as pd
+		  matplotlib as plt
+		  seaborn as sns
+		  scipy
+		  skitlearn
+
+- Load the dataset: train
+		    test
+
+
+
+- EDA
+
+
