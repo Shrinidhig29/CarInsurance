@@ -35,12 +35,26 @@ EXPLORATORY DATA ANALYSIS: EDA : discover the patterns, outliers. generating sum
 		unique:
 		corresponding fre:
 
-- Missing value imputation:
+- Missing value imputation:sklearn.impute.SimpleImputer
 		1. check for missing values
 			df.isnull().sum()
+			* delete/drop rows
+				Pro: complete removal of data with missing values results in robust and highly accurate model.
+				     deleting a particular row or a column with no specific infornmation is better, since it does not have a high weightage.
+				Cons: loss of information and data
+				      works poorly if percentage of missing values is high compared to whole dataset.
+
 		2. if there is any missing values then impute:
-			 mode - categorical features
-			 mean and meadian - numerical features
+			 mode - categorical features - df[''].mode()
+			 mean and meadian - numerical features - df[''].mean() and df[''].median()
+				 df[''].replace(np.NaN, df[''].mean()).head()
+			 Pros: this is better approach when the data size is small
+			       it can prevent data loss which results in removal of rows and columns
+			 Cons: imputing the approximation add variance and bias
+			       Works poorly compared to other multiple-imputations methods
+
+		3. Assigning an unique category
+			
 
 - Graphical representation
 	(I will try to use def function from next)
